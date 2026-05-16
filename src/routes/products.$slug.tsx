@@ -17,7 +17,7 @@ export const Route = createFileRoute("/products/$slug")({
 
 function ProductDetailPage() {
   const { slug } = Route.useParams();
-  const name = slug.split("-").map((s) => s[0].toUpperCase() + s.slice(1)).join(" ");
+  const name = slug.split("-").map((s: string) => s[0].toUpperCase() + s.slice(1)).join(" ");
 
   return (
     <SiteLayout>
