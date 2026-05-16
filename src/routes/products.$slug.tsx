@@ -6,7 +6,7 @@ import { ArrowRight, CheckCircle2, Download, Flame, Mail } from "lucide-react";
 
 export const Route = createFileRoute("/products/$slug")({
   head: ({ params }) => {
-    const name = params.slug.split("-").map((s) => s[0].toUpperCase() + s.slice(1)).join(" ");
+    const name = params.slug.split("-").map((s: string) => s[0].toUpperCase() + s.slice(1)).join(" ");
     return { meta: [
       { title: `${name} — ONE FIRE Safety & Security` },
       { name: "description", content: `${name}: technical specifications, features and use cases.` },
