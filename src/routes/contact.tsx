@@ -8,7 +8,7 @@ import { CheckCircle2, Mail, MapPin, MessageCircle, Phone, Send } from "lucide-r
 export const Route = createFileRoute("/contact")({
   head: () => ({ meta: [
     { title: "Contact — ONE FIRE Safety & Security" },
-    { name: "description", content: "Speak to our team about fire-safety audits, project quotes and emergency response." },
+    { name: "description", content: "Speak to our team about fire-safety audits, project quotes and consultations." },
   ]}),
   component: ContactPage,
 });
@@ -45,7 +45,7 @@ function ContactPage() {
       <PageHero
         eyebrow="Get in Touch"
         title="Tell us about your facility."
-        subtitle="Project enquiries, emergency assessments, training requests and partnership opportunities — our team responds within one working day."
+        subtitle="Project enquiries, site assessments, training requests and partnership opportunities — our team responds within one working day."
         crumbs={[{ label: "Contact" }]}
       />
 

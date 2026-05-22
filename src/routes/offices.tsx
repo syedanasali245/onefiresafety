@@ -26,7 +26,7 @@ function OfficesPage() {
       <PageHero
         eyebrow="Locations"
         title="Operations rooted across Pakistan."
-        subtitle="Nationwide service network with rapid mobilisation for installations, maintenance and emergency response."
+        subtitle="Nationwide service network with rapid mobilisation for installations and maintenance."
         crumbs={[{ label: "Offices" }]}
       />
 

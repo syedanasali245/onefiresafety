@@ -31,7 +31,6 @@ export function Header() {
       <div className="hidden md:block bg-charcoal text-white/80 text-xs">
         <div className="container-x flex h-9 items-center justify-between">
           <div className="flex items-center gap-6">
-            <span className="flex items-center gap-2"><span className="h-1.5 w-1.5 rounded-full bg-primary animate-pulse" /> 24/7 Emergency Response</span>
             <span className="hidden lg:inline">Plot No 101-K, Block 2 PECHS, Karachi 75400</span>
           </div>
           <div className="flex items-center gap-5">

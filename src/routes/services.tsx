@@ -30,7 +30,7 @@ function ServicesPage() {
       <PageHero
         eyebrow="What We Do"
         title="End-to-end fire protection & security engineering."
-        subtitle="From concept design and compliance audits to installation, training and 24/7 maintenance — we own every step of your safety lifecycle."
+        subtitle="From concept design and compliance audits to installation, training and maintenance — we own every step of your safety lifecycle."
         crumbs={[{ label: "Services" }]}
       />
 

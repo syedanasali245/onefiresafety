@@ -41,7 +41,7 @@ const SLIDES = [
     img: heroSec,
     eyebrow: "Security Infrastructure",
     title: "Safety First\nis Safety Always",
-    sub: "Integrated surveillance, access control and emergency response solutions for enterprise facilities.",
+    sub: "Integrated surveillance, access control and life-safety solutions for enterprise facilities.",
   },
   {
     img: heroTrain,
@@ -127,11 +127,10 @@ function HeroSlider() {
       {/* Stats strip */}
       <div className="absolute inset-x-0 bottom-0 hidden md:block">
         <div className="container-x">
-          <div className="bg-white text-charcoal grid grid-cols-4 rounded-t-xl shadow-elevated overflow-hidden">
+          <div className="bg-white text-charcoal grid grid-cols-3 rounded-t-xl shadow-elevated overflow-hidden">
             {[
-              ["20+", "Years of Service"],
-              ["500+", "Projects Delivered"],
-              ["24/7", "Emergency Response"],
+              ["5+", "Years of Experience"],
+              ["100+", "Projects Delivered"],
               ["NFPA / BS", "Compliance Standards"],
             ].map(([n, l]) => (
               <div key={l} className="px-6 py-5 border-r last:border-r-0 border-border">
@@ -150,7 +149,7 @@ const PILLARS = [
   { icon: Flame, t: "Protection", d: "Sprinklers, hydrants & suppression engineered for hazard." },
   { icon: Search, t: "Detection", d: "Smoke, heat & gas detection integrated with control panels." },
   { icon: ShieldCheck, t: "Prevention", d: "Audits, training and code-compliant facility design." },
-  { icon: Lock, t: "Security", d: "Access control, CCTV and 24/7 monitoring infrastructure." },
+  { icon: Lock, t: "Security", d: "Access control, CCTV and integrated monitoring infrastructure." },
 ];
 
 function AboutBlock() {
@@ -161,7 +160,7 @@ function AboutBlock() {
           <SectionHeader
             eyebrow="About ONE FIRE"
             title="An authoritative name in fire protection & life safety."
-            description="ONE FIRE Safety & Security is a proud company of ALINEX ENT., bringing decades of combined industrial expertise to high-stake environments — from manufacturing plants and warehouses to commercial high-rises."
+            description="ONE FIRE Safety & Security is a proud company of ALINEX ENT., bringing 5+ years of combined industrial expertise to high-stake environments — from manufacturing plants and warehouses to commercial high-rises."
           />
           <ul className="mt-8 space-y-3">
             {[
@@ -293,12 +292,11 @@ function WhyUs() {
           </h2>
         </div>
 
-        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {[
-            { n: "500+", l: "Industrial projects delivered", icon: Building2 },
-            { n: "20+", l: "Years of operational expertise", icon: Award },
+            { n: "100+", l: "Industrial projects delivered", icon: Building2 },
+            { n: "5+", l: "Years of operational expertise", icon: Award },
             { n: "100%", l: "NFPA & BS compliant designs", icon: ShieldCheck },
-            { n: "24/7", l: "Emergency response operations", icon: Users },
           ].map(({ n, l, icon: Icon }) => (
             <div key={l} className="border border-white/10 rounded-xl p-6 backdrop-blur-sm bg-white/[0.03]">
               <Icon className="h-7 w-7 text-primary" />
@@ -342,7 +340,7 @@ function Team() {
         <SectionHeader
           eyebrow="Speak to a Specialist"
           title="Talk directly to our leadership."
-          description="Reach our directors for project consultations, emergency assessments and partnership inquiries."
+          description="Reach our directors for project consultations, site assessments and partnership inquiries."
           align="center"
         />
         <div className="mt-14 grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">

@@ -26,7 +26,7 @@ function AboutPage() {
       <PageHero
         eyebrow="About Us"
         title="A heritage of safety, engineered for the modern industrial era."
-        subtitle="ONE FIRE Safety & Security is a proud company of ALINEX ENT. — combining decades of fire-protection experience with modern engineering practice."
+        subtitle="ONE FIRE Safety & Security is a proud company of ALINEX ENT. — combining 5+ years of fire-protection experience with modern engineering practice."
         crumbs={[{ label: "About" }]}
       />
 
@@ -40,7 +40,7 @@ function AboutPage() {
             />
             <div className="mt-8 grid sm:grid-cols-2 gap-4">
               {[
-                { icon: Building2, t: "500+ projects" },
+                { icon: Building2, t: "100+ projects" },
                 { icon: Users, t: "Expert engineering team" },
                 { icon: ShieldCheck, t: "NFPA & BS compliant" },
                 { icon: Award, t: "ISO 9001:2015 aligned" },

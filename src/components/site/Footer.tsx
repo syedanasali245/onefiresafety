@@ -50,8 +50,8 @@ export function Footer() {
         </div>
 
         <div>
-          <h4 className="text-white text-sm font-semibold tracking-widest uppercase mb-5">Emergency Inquiry</h4>
-          <p className="text-sm text-white/60 mb-4">Need urgent fire safety assessment? Reach our experts directly.</p>
+          <h4 className="text-white text-sm font-semibold tracking-widest uppercase mb-5">Quick Inquiry</h4>
+          <p className="text-sm text-white/60 mb-4">Need a fire safety assessment? Reach our experts directly.</p>
           <Link to="/contact" className="btn-primary w-full">Request a Callback <ArrowRight className="h-4 w-4" /></Link>
           <a
             href="https://wa.me/923340811200"

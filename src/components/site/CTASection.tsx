@@ -24,7 +24,7 @@ export function CTASection() {
                 Request a Quote <ArrowRight className="h-4 w-4" />
               </Link>
               <a href="tel:+923340811200" className="btn-outline-light justify-between !py-4">
-                <span className="flex items-center gap-2"><ShieldCheck className="h-4 w-4" /> Emergency Hotline</span>
+                <span className="flex items-center gap-2"><ShieldCheck className="h-4 w-4" /> Call Us</span>
                 +92 334 0811200
               </a>
             </div>
