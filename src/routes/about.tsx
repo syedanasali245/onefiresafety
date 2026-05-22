@@ -95,16 +95,12 @@ function AboutPage() {
         <div className="container-x">
           <SectionHeader eyebrow="Leadership" title="People accountable for outcomes." align="center" />
           <div className="mt-12 grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-            {[
-              { n: "Syed Anas Ali", r: "Director — Operations" },
-              { n: "Syed Burhan Ali", r: "Director — Business Development" },
-            ].map((p) => (
-              <div key={p.n} className="card-elevated rounded-2xl p-8 text-center">
+            {["Syed Anas Ali", "Syed Burhan Ali"].map((name) => (
+              <div key={name} className="card-elevated rounded-2xl p-8 text-center">
                 <div className="h-20 w-20 mx-auto rounded-full bg-charcoal text-white flex items-center justify-center text-2xl font-extrabold">
-                  {p.n.split(" ").map((s) => s[0]).slice(0, 2).join("")}
+                  {name.split(" ").map((s) => s[0]).slice(0, 2).join("")}
                 </div>
-                <h3 className="mt-5 font-bold text-charcoal text-lg">{p.n}</h3>
-                <p className="text-xs uppercase tracking-widest text-primary mt-1">{p.r}</p>
+                <h3 className="mt-5 font-bold text-charcoal text-lg">{name}</h3>
                 <Link to="/contact" className="mt-5 inline-flex text-sm font-semibold text-charcoal hover:text-primary">Get in touch →</Link>
               </div>
             ))}

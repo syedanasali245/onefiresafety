@@ -319,14 +319,12 @@ function WhyUs() {
 const PROFILES = [
   {
     name: "Syed Anas Ali",
-    role: "Director — Operations",
     email: "anas@onefiresafety.com",
     phones: ["+92 334 0811200", "+49 1577 3856513"],
     wa: "923340811200",
   },
   {
     name: "Syed Burhan Ali",
-    role: "Director — Business Development",
     email: "burhan@onefiresafety.com",
     phones: ["+92 300 9121994"],
     wa: "923009121994",
@@ -354,7 +352,6 @@ function Team() {
                   </div>
                   <div>
                     <h3 className="font-bold text-charcoal text-lg">{p.name}</h3>
-                    <p className="text-xs uppercase tracking-widest text-primary mt-0.5">{p.role}</p>
                   </div>
                 </div>
 
