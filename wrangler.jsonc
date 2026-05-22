@@ -3,5 +3,6 @@
   "name": "tanstack-start-app",
   "compatibility_date": "2025-09-24",
   "compatibility_flags": ["nodejs_compat"],
-  "main": "src/server.ts",
+  // Optional — Cloudflare Workers only. Vercel/Netlify use static build (netlify.toml / vercel.json).
+  "main": "@tanstack/react-start/server-entry"
 }
