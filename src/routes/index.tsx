@@ -12,6 +12,7 @@ import heroFire from "@/assets/hero-firefighters.jpg";
 import heroSprink from "@/assets/hero-sprinkler.jpg";
 import heroSec from "@/assets/hero-security.jpg";
 import heroTrain from "@/assets/hero-training.jpg";
+import { FEATURED_PRODUCTS } from "@/lib/products";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -241,17 +242,6 @@ function Services() {
   );
 }
 
-const PRODUCTS = [
-  { t: "Smoke Detectors", d: "Photoelectric & ionisation detectors for early warning." },
-  { t: "Fire Sprinklers", d: "Standard, ESFR and concealed sprinkler heads." },
-  { t: "SCBA Systems", d: "Self-contained breathing apparatus for hazardous entry." },
-  { t: "Fire Alarm Panels", d: "Addressable & conventional control panels." },
-  { t: "Fall Arrest Equipment", d: "Harnesses, lanyards and confined-space rescue kits." },
-  { t: "Rescue Equipment", d: "Hydraulic cutters, spreaders and rescue rams." },
-  { t: "PPE & Chemical Suits", d: "Dupont coveralls, Newtex fire-entry & welding suits." },
-  { t: "Fire Vehicles", d: "Fire trucks and industrial fire-fighting vehicles." },
-];
-
 function Products() {
   return (
     <section className="section bg-surface">
@@ -261,11 +251,11 @@ function Products() {
           <Link to="/products" className="btn-outline-dark self-start md:self-end">Browse Catalogue <ArrowRight className="h-4 w-4" /></Link>
         </div>
         <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-          {PRODUCTS.map((p) => (
+          {FEATURED_PRODUCTS.map((p) => (
             <Link
-              key={p.t}
+              key={p.slug}
               to="/products/$slug"
-              params={{ slug: p.t.toLowerCase().replace(/[^a-z0-9]+/g, "-") }}
+              params={{ slug: p.slug }}
               className="card-elevated rounded-xl overflow-hidden group"
             >
               <div className="aspect-[4/3] bg-charcoal relative overflow-hidden">
@@ -273,11 +263,11 @@ function Products() {
                 <div className="absolute inset-0 flex items-center justify-center">
                   <Flame className="h-16 w-16 text-primary group-hover:scale-110 transition-transform" strokeWidth={1.2} />
                 </div>
-                <div className="absolute top-3 left-3 text-[10px] font-bold uppercase tracking-widest text-white bg-primary px-2 py-1 rounded">Featured</div>
+                <div className="absolute top-3 left-3 text-[10px] font-bold uppercase tracking-widest text-white bg-primary px-2 py-1 rounded">{p.type}</div>
               </div>
               <div className="p-5">
-                <h3 className="font-bold text-charcoal">{p.t}</h3>
-                <p className="text-xs text-muted-foreground mt-1.5 leading-relaxed">{p.d}</p>
+                <h3 className="font-bold text-charcoal">{p.title}</h3>
+                <p className="text-xs text-muted-foreground mt-1.5 leading-relaxed line-clamp-2">{p.description}</p>
                 <div className="mt-4 inline-flex items-center gap-1 text-xs font-semibold text-primary">
                   Explore more <ArrowRight className="h-3 w-3" />
                 </div>
