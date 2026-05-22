@@ -320,7 +320,7 @@ const PROFILES = [
   {
     name: "Syed Anas Ali",
     email: "anas@onefiresafety.com",
-    phones: ["+92 334 0811200", "+49 1577 3856513"],
+    phones: ["+92 334 0811200"],
     wa: "923340811200",
   },
   {
