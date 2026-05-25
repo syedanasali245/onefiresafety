@@ -15,7 +15,7 @@ export const Route = createFileRoute("/offices")({
 const OFFICES = [
   { city: "Karachi (Head Office)", addr: "Plot No 101-K, Office No 03, Block 2 PECHS, Karachi 75400", phone: "+92 334 0811200", email: "info@onefiresafety.com" },
   { city: "Lahore", addr: "Sales & Service Office, Gulberg III, Lahore", phone: "+92 300 9121994", email: "info@onefiresafety.com" },
-  { city: "International", addr: "Representative Office, Germany", phone: "+49 1577 3856513", email: "info@onefiresafety.com" },
+  { city: "International", addr: "Representative Office, Germany", phone: "", email: "info@onefiresafety.com" },
 ];
 
 function OfficesPage() {
@@ -42,7 +42,7 @@ function OfficesPage() {
                 <h3 className="font-bold text-charcoal text-lg">{o.city}</h3>
                 <div className="mt-3 space-y-2 text-sm">
                   <p className="flex gap-3 text-charcoal/80"><MapPin className="h-4 w-4 text-primary mt-0.5 shrink-0" /> {o.addr}</p>
-                  <a href={`tel:${o.phone.replace(/\s/g, "")}`} className="flex gap-3 text-charcoal/80 hover:text-primary"><Phone className="h-4 w-4 text-primary mt-0.5" /> {o.phone}</a>
+                  {o.phone && <a href={`tel:${o.phone.replace(/\s/g, "")}`} className="flex gap-3 text-charcoal/80 hover:text-primary"><Phone className="h-4 w-4 text-primary mt-0.5" /> {o.phone}</a>}
                   <a href={`mailto:${o.email}`} className="flex gap-3 text-charcoal/80 hover:text-primary"><Mail className="h-4 w-4 text-primary mt-0.5" /> {o.email}</a>
                 </div>
               </div>
