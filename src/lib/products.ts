@@ -151,17 +151,6 @@ const catalog: { category: string; types: { type: string; items: string[] }[] }[
         ],
       },
       {
-        type: "Emergency Lighting Systems",
-        items: [
-          "Emergency Exit Lights",
-          "Rechargeable Emergency Lights",
-          "Twin Spot Emergency Lights",
-          "Ceiling Emergency Lights",
-          "Wall Mounted Emergency Lights",
-          "Bulkhead Emergency Lights",
-        ],
-      },
-      {
         type: "Safety Equipment",
         items: [
           "Safety Gloves",
