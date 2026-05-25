@@ -9,72 +9,70 @@ import fireCabinetLandingValve     from "@/assets/products/fire-cabinet-landing-
 import fireCabinetFoam             from "@/assets/products/fire-cabinet-foam.png";
 
 // ─── Sprinklers ───────────────────────────────────────────────────────────────
-import sprinklerUpright      from "@/assets/products/sprinkler-upright.png";
-import sprinklerPendant      from "@/assets/products/sprinkler-pendant.png";
-import sprinklerSidewall     from "@/assets/products/sprinkler-sidewall.png";
-import sprinklerRecessed     from "@/assets/products/sprinkler-recessed.png";
-import sprinklerEsfr         from "@/assets/products/sprinkler-esfr.png";
-import sprinklerStorageRack  from "@/assets/products/sprinkler-storage-rack.png";
-import sprinklerConcealed    from "@/assets/products/sprinkler-concealed.jpg";
+import sprinklerUpright       from "@/assets/products/sprinkler-upright.png";
+import sprinklerPendant       from "@/assets/products/sprinkler-pendant.png";
+import sprinklerSidewall      from "@/assets/products/sprinkler-sidewall.png";
+import sprinklerRecessed      from "@/assets/products/sprinkler-recessed.png";
+import sprinklerEsfr          from "@/assets/products/sprinkler-esfr.png";
+import sprinklerStorageRack   from "@/assets/products/sprinkler-storage-rack.png";
+// Concealed & Quick Response were overlapping (pendant/upright) → replaced with dedicated images
+import sprinklerConcealed     from "@/assets/products/sprinkler-concealed.jpg";
 import sprinklerQuickResponse from "@/assets/products/sprinkler-quick-response.jpg";
 
 // ─── Fire Pumps ───────────────────────────────────────────────────────────────
-import pumpDiesel     from "@/assets/products/pump-diesel.png";
-import pumpElectric   from "@/assets/products/pump-electric.png";
-import pumpJockey     from "@/assets/products/pump-jockey.png";
-import pumpHorizontal from "@/assets/products/pump-horizontal-split.png";
-import pumpVertical   from "@/assets/products/pump-vertical-turbine.png";
+// EDJ was overlapping (used pumpElectric) → replaced with dedicated pump set photo
+import pumpEdjComplete from "@/assets/products/pump-edj-complete.jpg";             // haseenhabib
+import pumpHorizontal  from "@/assets/products/pump-horizontal-split.png";
+import pumpVertical    from "@/assets/products/pump-vertical-turbine.png";
 
 // ─── Fire Valves ──────────────────────────────────────────────────────────────
-import valveButterfly        from "@/assets/products/valve-butterfly.png";
 import valveGate             from "@/assets/products/valve-gate.png";
 import valveCheck            from "@/assets/products/valve-check.png";
 import valveAlarm            from "@/assets/products/valve-alarm.png";
 import valvePressureReducing from "@/assets/products/valve-pressure-reducing.png";
-import valveDeluge           from "@/assets/products/valve-deluge.png";
 
 // ─── Suppression Systems ──────────────────────────────────────────────────────
-import suppressionGas             from "@/assets/products/suppression-gas.png";
-import suppressionFoam            from "@/assets/products/suppression-foam.png";
-import suppressionAerosol         from "@/assets/products/suppression-aerosol.png";
-import suppressionKitchenHood     from "@/assets/products/suppression-kitchen-hood.png";
-import suppressionWaterMist       from "@/assets/products/suppression-water-mist.png";
-import suppressionElectricalPanel from "@/assets/products/suppression-electrical-panel.png";
-import suppressionBatteryRoom     from "@/assets/products/suppression-battery-room.png";
-import suppressionCleanAgent      from "@/assets/products/suppression-clean-agent.jpg";
-import suppressionFm200           from "@/assets/products/suppression-fm200.jpg";
-import suppressionNovec           from "@/assets/products/suppression-novec.jpg";
-import suppressionServerRoom      from "@/assets/products/suppression-server-room.jpg";
-import suppressionDataCenter      from "@/assets/products/suppression-data-center.jpg";
+// gas/foam/aerosol/kitchen/water-mist/elec-panel all had their own correct images — kept
+import suppressionGas         from "@/assets/products/suppression-gas.png";
+import suppressionFoam        from "@/assets/products/suppression-foam.png";
+import suppressionAerosol     from "@/assets/products/suppression-aerosol.png";
+import suppressionKitchenHood from "@/assets/products/suppression-kitchen-hood.png";
+import suppressionWaterMist   from "@/assets/products/suppression-water-mist.png";
+import suppressionElecPanel   from "@/assets/products/suppression-electrical-panel.png";
+// Clean-agent & data-center were overlapping each other → replaced with distinct gaseous image
+import suppressionGaseous     from "@/assets/products/suppression-gaseous.jpg";    // haseenhabib
 
 // ─── Fire Alarm Systems ───────────────────────────────────────────────────────
-import alarmAddressablePanel       from "@/assets/products/alarm-addressable-panel.jpg";
-import alarmSmokeDetectorAddressable from "@/assets/products/alarm-smoke-detector-addressable.png";
-import alarmHeatDetectorAddressable  from "@/assets/products/alarm-heat-detector-addressable.png";
-import alarmAddressableModule      from "@/assets/products/alarm-addressable-module.png";
-import alarmAddressableSounder     from "@/assets/products/alarm-addressable-sounder.png";
-import alarmAddressableCallPoint   from "@/assets/products/alarm-addressable-call-point.png";
-import alarmConventionalPanel      from "@/assets/products/alarm-conventional-panel.png";
-import alarmSmokeDetector          from "@/assets/products/alarm-smoke-detector.png";
-import alarmHeatDetector           from "@/assets/products/alarm-heat-detector.png";
-import alarmManualCallPoint        from "@/assets/products/alarm-manual-call-point.png";
-import alarmSounder                from "@/assets/products/alarm-sounder.png";
-import alarmFlasher                from "@/assets/products/alarm-flasher.png";
-import alarmSounderBase            from "@/assets/products/alarm-sounder-base.png";
+// Addressable panel had its own correct image — kept
+import alarmAddressablePanel     from "@/assets/products/alarm-addressable-panel.jpg";
+import alarmSmokeDetectorAddr    from "@/assets/products/alarm-smoke-detector-addressable.png";
+import alarmHeatDetectorAddr     from "@/assets/products/alarm-heat-detector-addressable.png";
+import alarmAddressableModule    from "@/assets/products/alarm-addressable-module.png";
+import alarmAddressableSounder   from "@/assets/products/alarm-addressable-sounder.png";
+import alarmAddressableCallPoint from "@/assets/products/alarm-addressable-call-point.png";
+import alarmConventionalPanel    from "@/assets/products/alarm-conventional-panel.png";
+import alarmSmokeDetector        from "@/assets/products/alarm-smoke-detector.png";
+import alarmHeatDetector         from "@/assets/products/alarm-heat-detector.png";
+import alarmManualCallPoint      from "@/assets/products/alarm-manual-call-point.png";
+import alarmSounder              from "@/assets/products/alarm-sounder.png";
+import alarmFlasher              from "@/assets/products/alarm-flasher.png";
+import alarmSounderBase          from "@/assets/products/alarm-sounder-base.png";
 
 // ─── Detection Systems ────────────────────────────────────────────────────────
 import detectorBeam        from "@/assets/products/detector-beam.png";
-import detectorGas         from "@/assets/products/detector-gas.png";
-import detectorAspirating  from "@/assets/products/detector-aspirating.png";
-import detectorMultiSensor from "@/assets/products/detector-multi-sensor.png";
 import detectorFlame       from "@/assets/products/detector-flame.jpg";
+// Gas detector had its own correct image — kept
+import detectorGas         from "@/assets/products/detector-gas.png";
+// Aspirating was using a duct detector (wrong) → replaced with VESDA image
+import detectorVesda       from "@/assets/products/detector-aspirating-vesda.jpg";  // haseenhabib
+import detectorMultiSensor from "@/assets/products/detector-multi-sensor.png";
 
 // ─── Notification Systems ─────────────────────────────────────────────────────
-import notificationSiren              from "@/assets/products/notification-siren.jpg";
-import notificationHorn               from "@/assets/products/notification-horn.jpg";
-import notificationVoiceEvacuation    from "@/assets/products/notification-voice-evacuation.jpg";
-import notificationAnnouncement       from "@/assets/products/notification-announcement.jpg";
-import notificationStrobe             from "@/assets/products/notification-strobe.png";
+import notificationSiren        from "@/assets/products/notification-siren.jpg";
+import notificationHorn         from "@/assets/products/notification-horn.jpg";
+import notificationVoiceEvac    from "@/assets/products/notification-voice-evacuation.jpg";
+import notificationAnnouncement from "@/assets/products/notification-announcement.jpg";
+import notificationStrobe       from "@/assets/products/notification-strobe.png";
 
 // ─── Fire Alarm Accessories ───────────────────────────────────────────────────
 import accessoryAlarmCable  from "@/assets/products/accessory-alarm-cable.png";
@@ -83,33 +81,30 @@ import accessoryModule      from "@/assets/products/accessory-module.png";
 import accessoryJunctionBox from "@/assets/products/accessory-junction-box.png";
 import accessoryBattery     from "@/assets/products/accessory-battery.jpg";
 
-// ─── PPE / Safety Equipment ───────────────────────────────────────────────────
-import ppeHelmet            from "@/assets/products/ppe-helmet.jpg";
-import ppeShoes             from "@/assets/products/ppe-shoes.jpg";
-import ppeJacket            from "@/assets/products/ppe-jacket.jpg";
-import ppeGloves            from "@/assets/products/ppe-gloves.jpg";
-import ppeFireGloves        from "@/assets/products/ppe-fire-gloves.jpg";
-import ppeIndustrialGloves  from "@/assets/products/ppe-industrial-gloves.jpg";
-import ppeGoggles           from "@/assets/products/ppe-goggles.jpg";
-import ppeFaceShield        from "@/assets/products/ppe-face-shield.jpg";
-import ppeRespirator        from "@/assets/products/ppe-respirator.jpg";
-import ppeEarProtection     from "@/assets/products/ppe-ear-protection.jpg";
-import ppeCoveralls         from "@/assets/products/ppe-coveralls.jpg";
-import ppeChemicalSuit      from "@/assets/products/ppe-chemical-suit.jpg";
-import ppeWelding           from "@/assets/products/ppe-welding.jpg";
-
-// ─── Fire Safety Equipment ────────────────────────────────────────────────────
+// ─── Fire Safety Equipment (all had their own correct images — kept) ───────────
 import safetyFireExtinguisher from "@/assets/products/safety-fire-extinguisher.png";
 import safetyHoseReel         from "@/assets/products/safety-hose-reel.png";
 import safetyFireHose         from "@/assets/products/safety-fire-hose.png";
 import safetyNozzle           from "@/assets/products/safety-nozzle.png";
 import safetyHoseCabinet      from "@/assets/products/safety-hose-cabinet.png";
-import safetyFireBlanket      from "@/assets/products/safety-fire-blanket.png";
+import safetyFireBlanket      from "@/assets/products/safety-fire-blanket.webp";
 import safetyFireBucket       from "@/assets/products/safety-fire-bucket.png";
+
+// ─── PPE Equipment (were all overlapping → now each has a dedicated image) ────
+import ppeHeadProtection        from "@/assets/products/ppe-head-protection.jpg";       // haseenhabib
+import ppeEyeProtection         from "@/assets/products/ppe-eye-protection.jpg";        // haseenhabib
+import ppeHearingProtection     from "@/assets/products/ppe-hearing-protection.jpg";    // haseenhabib
+import ppeRespiratoryProtection from "@/assets/products/ppe-respiratory-protection.jpg";// haseenhabib
+import ppeFaceProtection        from "@/assets/products/ppe-face-protection.jpg";       // haseenhabib
+import ppeHandProtection        from "@/assets/products/ppe-hand-protection.jpg";       // haseenhabib
+import ppeBodyProtection        from "@/assets/products/ppe-body-protection.jpg";       // haseenhabib
+import ppeFootProtection        from "@/assets/products/ppe-foot-protection.jpg";       // haseenhabib
+import ppeFireSuit              from "@/assets/products/ppe-fire-suit.jpg";             // haseenhabib
 
 // ─── Fire Rated Doors ─────────────────────────────────────────────────────────
 import doorSteelFireRated  from "@/assets/products/door-steel-fire-rated.png";
-import doorWoodenFireRated from "@/assets/products/door-wooden-fire-rated.png";
+// Wooden door was overlapping (same image as steel) → replaced
+import doorFireRatedHh     from "@/assets/products/door-fire-rated-hh.jpg";             // haseenhabib
 import doorEmergencyExit   from "@/assets/products/door-emergency-exit.png";
 import doorDoubleLeaf      from "@/assets/products/door-double-leaf.png";
 import doorSingleLeaf      from "@/assets/products/door-single-leaf.png";
@@ -122,31 +117,15 @@ import doorAccVisionPanel  from "@/assets/products/door-acc-vision-panel.png";
 import doorAccSeal         from "@/assets/products/door-acc-seal.png";
 
 // ─── Emergency / Exit Signs & Lights ─────────────────────────────────────────
-import emergencyExitSign          from "@/assets/products/emergency-exit-sign.png";
-import emergencyLedExit           from "@/assets/products/emergency-led-exit.png";
-import emergencyPhotolumSign      from "@/assets/products/emergency-photolum-sign.png";
-import emergencyDoubleSign        from "@/assets/products/emergency-double-sign.png";
-import emergencyDirectionalSign   from "@/assets/products/emergency-directional-sign.png";
-import emergencyExitLight         from "@/assets/products/emergency-exit-light.png";
-import emergencyRechargeableLight from "@/assets/products/emergency-rechargeable-light.png";
-import emergencyTwinSpot          from "@/assets/products/emergency-twin-spot.png";
-import emergencyCeilingLight      from "@/assets/products/emergency-ceiling-light.png";
-import emergencyWallLight         from "@/assets/products/emergency-wall-light.png";
-import emergencyBulkheadLight     from "@/assets/products/emergency-bulkhead-light.png";
-
-// ─── Pipes & Fittings ─────────────────────────────────────────────────────────
-import pipeBlackSteel   from "@/assets/products/pipe-black-steel.png";
-import pipeSeamless     from "@/assets/products/pipe-seamless.png";
-import pipeHdpe         from "@/assets/products/pipe-hdpe.png";
-import pipeGrooved      from "@/assets/products/pipe-grooved.png";
-import pipeFittings     from "@/assets/products/pipe-fittings.png";
-import pipeCouplings    from "@/assets/products/pipe-couplings.png";
-import pipeFlexibleHose from "@/assets/products/pipe-flexible-hose.png";
-import pipeFlanges      from "@/assets/products/pipe-flanges.png";
+import emergencyExitSign        from "@/assets/products/emergency-exit-sign.png";
+import emergencyLedExit         from "@/assets/products/emergency-led-exit.png";
+import emergencyPhotolumSign    from "@/assets/products/emergency-photolum-sign.png";
+import emergencyDoubleSign      from "@/assets/products/emergency-double-sign.png";
+import emergencyDirectionalSign from "@/assets/products/emergency-directional-sign.png";
 
 // ─── Slug → Image map ─────────────────────────────────────────────────────────
 export const PRODUCT_IMAGES: Record<string, string> = {
-  // Fire Cabinets
+  // Fire Cabinets — all unique, untouched
   "single-door-surface-mounted-cabinet": fireCabinetSingleSurface,
   "single-door-recessed-cabinet":        fireCabinetSingleRecessed,
   "double-door-fire-cabinet":            fireCabinetDouble,
@@ -156,7 +135,7 @@ export const PRODUCT_IMAGES: Record<string, string> = {
   "landing-valve-cabinet":               fireCabinetLandingValve,
   "foam-system-cabinet":                 fireCabinetFoam,
 
-  // Sprinklers
+  // Sprinklers — unique images kept; concealed & quick-response were overlapping → fixed
   "upright-sprinklers":        sprinklerUpright,
   "pendant-sprinklers":        sprinklerPendant,
   "sidewall-sprinklers":       sprinklerSidewall,
@@ -166,52 +145,37 @@ export const PRODUCT_IMAGES: Record<string, string> = {
   "concealed-sprinklers":      sprinklerConcealed,
   "quick-response-sprinklers": sprinklerQuickResponse,
 
-  // Pipes & Fittings
-  "black-steel-pipes":        pipeBlackSteel,
-  "seamless-pipes":           pipeSeamless,
-  "hdpe-pipes":               pipeHdpe,
-  "grooved-pipes":            pipeGrooved,
-  "pipe-fittings":            pipeFittings,
-  "couplings":                pipeCouplings,
-  "flexible-sprinkler-hoses": pipeFlexibleHose,
-  "flanges":                  pipeFlanges,
-
-  // Fire Pumps
-  "edj-complete-pump-set":       pumpElectric,
+  // Fire Pumps — EDJ was overlapping (used pumpElectric) → fixed
+  "edj-complete-pump-set":       pumpEdjComplete,
   "horizontal-split-case-pumps": pumpHorizontal,
   "vertical-turbine-pumps":      pumpVertical,
 
-  // Fire Valves
-  "butterfly-valves":         valveButterfly,
+  // Fire Valves — all unique, untouched
   "gate-valves":              valveGate,
   "check-valves":             valveCheck,
   "alarm-valves":             valveAlarm,
   "pressure-reducing-valves": valvePressureReducing,
-  "deluge-valves":            valveDeluge,
 
-  // Suppression Systems
-  "gas-suppression-systems":               suppressionGas,
-  "foam-suppression-systems":              suppressionFoam,
-  "aerosol-suppression-systems":           suppressionAerosol,
-  "kitchen-hood-suppression-systems":      suppressionKitchenHood,
-  "water-mist-systems":                    suppressionWaterMist,
-  "clean-agent-suppression-systems":       suppressionCleanAgent,
-  "fm200-systems":                         suppressionFm200,
-  "novec-fire-suppression-systems":        suppressionNovec,
-  "electrical-panel-suppression-systems":  suppressionElectricalPanel,
-  "server-room-suppression-systems":       suppressionServerRoom,
-  "data-center-fire-suppression-systems":  suppressionDataCenter,
-  "battery-room-suppression-systems":      suppressionBatteryRoom,
+  // Suppression — gas/foam/aerosol/kitchen/water-mist/elec-panel had correct images, kept
+  // clean-agent & data-center were overlapping each other → replaced with suppressionGaseous
+  "gas-suppression-systems":              suppressionGas,
+  "foam-suppression-systems":             suppressionFoam,
+  "aerosol-suppression-systems":          suppressionAerosol,
+  "kitchen-hood-suppression-systems":     suppressionKitchenHood,
+  "water-mist-systems":                   suppressionWaterMist,
+  "clean-agent-suppression-systems":      suppressionGaseous,
+  "electrical-panel-suppression-systems": suppressionElecPanel,
+  "data-center-fire-suppression-systems": suppressionGaseous,
 
-  // Addressable Fire Alarm
+  // Addressable Fire Alarm — all had correct images, untouched
   "addressable-fire-alarm-panels":  alarmAddressablePanel,
-  "intelligent-smoke-detectors":    alarmSmokeDetectorAddressable,
-  "intelligent-heat-detectors":     alarmHeatDetectorAddressable,
+  "intelligent-smoke-detectors":    alarmSmokeDetectorAddr,
+  "intelligent-heat-detectors":     alarmHeatDetectorAddr,
   "addressable-modules":            alarmAddressableModule,
   "addressable-sounders":           alarmAddressableSounder,
   "addressable-manual-call-points": alarmAddressableCallPoint,
 
-  // Conventional Fire Alarm
+  // Conventional Fire Alarm — all had correct images, untouched
   "conventional-fire-alarm-panels": alarmConventionalPanel,
   "smoke-detectors":                alarmSmokeDetector,
   "heat-detectors":                 alarmHeatDetector,
@@ -220,53 +184,35 @@ export const PRODUCT_IMAGES: Record<string, string> = {
   "flashers":                       alarmFlasher,
   "sounder-bases":                  alarmSounderBase,
 
-  // Detection Systems
+  // Detection — all had correct images; aspirating was wrong (duct detector) → fixed with VESDA
   "beam-detectors":                     detectorBeam,
   "flame-detectors":                    detectorFlame,
   "gas-detectors":                      detectorGas,
-  "aspirating-smoke-detection-systems": detectorAspirating,
+  "aspirating-smoke-detection-systems": detectorVesda,
   "multi-sensor-detectors":             detectorMultiSensor,
 
-  // Notification Systems
+  // Notification Systems — all had correct images, untouched
   "alarm-sirens":                   notificationSiren,
   "horn-speakers":                  notificationHorn,
-  "voice-evacuation-systems":       notificationVoiceEvacuation,
+  "voice-evacuation-systems":       notificationVoiceEvac,
   "emergency-announcement-systems": notificationAnnouncement,
   "strobe-lights":                  notificationStrobe,
 
-  // Fire Alarm Accessories
+  // Fire Alarm Accessories — all had correct images, untouched
   "fire-alarm-cables":  accessoryAlarmCable,
   "batteries":          accessoryBattery,
   "power-supply-units": accessoryPsu,
   "modules":            accessoryModule,
   "junction-boxes":     accessoryJunctionBox,
 
-  // Emergency Exit Systems
+  // Emergency Exit Systems — had correct images, untouched
   "emergency-exit-signs":        emergencyExitSign,
   "led-exit-signs":              emergencyLedExit,
   "photoluminescent-exit-signs": emergencyPhotolumSign,
   "double-side-exit-signs":      emergencyDoubleSign,
   "emergency-directional-signs": emergencyDirectionalSign,
 
-  // Emergency Lighting Systems
-  "emergency-exit-lights":           emergencyExitLight,
-  "rechargeable-emergency-lights":   emergencyRechargeableLight,
-  "twin-spot-emergency-lights":      emergencyTwinSpot,
-  "ceiling-emergency-lights":        emergencyCeilingLight,
-  "wall-mounted-emergency-lights":   emergencyWallLight,
-  "bulkhead-emergency-lights":       emergencyBulkheadLight,
-
-  // Safety Equipment / PPE
-  "safety-gloves":             ppeGloves,
-  "fire-resistant-gloves":     ppeFireGloves,
-  "industrial-safety-gloves":  ppeIndustrialGloves,
-  "safety-helmets":            ppeHelmet,
-  "safety-goggles":            ppeGoggles,
-  "reflective-safety-jackets": ppeJacket,
-  "safety-shoes":              ppeShoes,
-  "face-shields":              ppeFaceShield,
-
-  // Fire Safety Equipment
+  // Fire Safety Equipment — all had correct images, untouched
   "fire-blankets":      safetyFireBlanket,
   "fire-buckets":       safetyFireBucket,
   "fire-extinguishers": safetyFireExtinguisher,
@@ -275,23 +221,34 @@ export const PRODUCT_IMAGES: Record<string, string> = {
   "nozzles":            safetyNozzle,
   "hose-cabinets":      safetyHoseCabinet,
 
-  // PPE Equipment
-  "respirators":                  ppeRespirator,
-  "ear-protection":               ppeEarProtection,
-  "protective-coveralls":         ppeCoveralls,
-  "chemical-protection-suits":    ppeChemicalSuit,
-  "welding-protection-equipment": ppeWelding,
+  // Safety Equipment / PPE — were ALL using fire extinguisher image → now each has dedicated photo
+  "safety-gloves":             ppeHandProtection,
+  "fire-resistant-gloves":     ppeHandProtection,
+  "industrial-safety-gloves":  ppeHandProtection,
+  "safety-helmets":            ppeHeadProtection,
+  "safety-goggles":            ppeEyeProtection,
+  "reflective-safety-jackets": ppeBodyProtection,
+  "safety-shoes":              ppeFootProtection,
+  "face-shields":              ppeFaceProtection,
 
-  // Fire Rated Doors
+  // PPE Equipment — were ALL using fire extinguisher image → now each has dedicated photo
+  "respirators":                  ppeRespiratoryProtection,
+  "ear-protection":               ppeHearingProtection,
+  "protective-coveralls":         ppeBodyProtection,
+  "chemical-protection-suits":    ppeBodyProtection,
+  "welding-protection-equipment": ppeFireSuit,
+
+  // Fire Rated Doors — steel/emergency/double/single/panic/acoustic had unique images, kept
+  // Wooden door was sharing steel door image → replaced
   "steel-fire-rated-doors":  doorSteelFireRated,
-  "wooden-fire-rated-doors": doorWoodenFireRated,
+  "wooden-fire-rated-doors": doorFireRatedHh,
   "emergency-exit-doors":    doorEmergencyExit,
   "double-leaf-fire-doors":  doorDoubleLeaf,
   "single-leaf-fire-doors":  doorSingleLeaf,
   "panic-bar-doors":         doorPanicBar,
   "acoustic-fire-doors":     doorAcoustic,
 
-  // Door Accessories
+  // Door Accessories — all had correct images, untouched
   "panic-bars":        doorAccPanicBar,
   "door-closers":      doorAccCloser,
   "fire-rated-hinges": doorAccHinge,
