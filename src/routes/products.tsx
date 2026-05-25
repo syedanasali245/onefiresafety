@@ -74,7 +74,7 @@ function ProductsPage() {
                           params={{ slug: p.slug }}
                           className="card-elevated rounded-xl overflow-hidden group"
                         >
-                          <div className="aspect-[4/3] bg-charcoal relative overflow-hidden">
+                          <div className="aspect-[4/3] bg-white relative overflow-hidden border border-border">
                             {getProductImage(p.slug) ? (
                               <img
                                 src={getProductImage(p.slug)}

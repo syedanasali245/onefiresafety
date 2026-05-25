@@ -13,6 +13,7 @@ import heroSprink from "@/assets/hero-sprinkler.jpg";
 import heroSec from "@/assets/hero-security.jpg";
 import heroTrain from "@/assets/hero-training.jpg";
 import { FEATURED_PRODUCTS } from "@/lib/products";
+import { getProductImage } from "@/lib/product-images";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -257,11 +258,21 @@ function Products() {
               params={{ slug: p.slug }}
               className="card-elevated rounded-xl overflow-hidden group"
             >
-              <div className="aspect-[4/3] bg-charcoal relative overflow-hidden">
-                <div className="absolute inset-0 grid-bg opacity-10" />
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <Flame className="h-16 w-16 text-primary group-hover:scale-110 transition-transform" strokeWidth={1.2} />
-                </div>
+              <div className="aspect-[4/3] bg-white border border-border relative overflow-hidden">
+                {getProductImage(p.slug) ? (
+                  <img
+                    src={getProductImage(p.slug)}
+                    alt={p.title}
+                    className="absolute inset-0 w-full h-full object-contain p-4 group-hover:scale-105 transition-transform duration-300"
+                  />
+                ) : (
+                  <>
+                    <div className="absolute inset-0 grid-bg opacity-10" />
+                    <div className="absolute inset-0 flex items-center justify-center">
+                      <Flame className="h-16 w-16 text-primary group-hover:scale-110 transition-transform" strokeWidth={1.2} />
+                    </div>
+                  </>
+                )}
                 <div className="absolute top-3 left-3 text-[10px] font-bold uppercase tracking-widest text-white bg-primary px-2 py-1 rounded">{p.type}</div>
               </div>
               <div className="p-5">

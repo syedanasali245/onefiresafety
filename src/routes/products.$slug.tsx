@@ -46,7 +46,7 @@ function ProductDetailPage() {
 
       <section className="section">
         <div className="container-x grid lg:grid-cols-[1.1fr_1fr] gap-12">
-          <div className="aspect-[4/3] rounded-2xl bg-charcoal relative overflow-hidden">
+          <div className="aspect-[4/3] rounded-2xl bg-white border border-border relative overflow-hidden">
             {image ? (
               <img
                 src={image}
@@ -126,7 +126,7 @@ function ProductDetailPage() {
                   params={{ slug: p.slug }}
                   className="card-elevated rounded-xl overflow-hidden group"
                 >
-                  <div className="aspect-[4/3] bg-charcoal flex items-center justify-center relative overflow-hidden">
+                  <div className="aspect-[4/3] bg-white flex items-center justify-center relative overflow-hidden border border-border">
                     {getProductImage(p.slug) ? (
                       <img
                         src={getProductImage(p.slug)}
