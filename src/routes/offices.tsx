@@ -14,10 +14,8 @@ export const Route = createFileRoute("/offices")({
 
 const OFFICES = [
   { city: "Karachi (Head Office)", addr: "Plot No 101-K, Office No 03, Block 2 PECHS, Karachi 75400", phone: "+92 334 0811200", email: "info@onefiresafety.com" },
-  { city: "Lahore", addr: "Sales & Service Office, Gulberg III, Lahore", phone: "+92 300 9121994", email: "lahore@onefiresafety.com" },
-  { city: "Rawalpindi", addr: "Saddar, Rawalpindi", phone: "+92 334 0811200", email: "rwp@onefiresafety.com" },
-  { city: "Faisalabad", addr: "D-Ground, Faisalabad", phone: "+92 300 9121994", email: "fsd@onefiresafety.com" },
-  { city: "International", addr: "Representative Office, Germany", phone: "+49 1577 3856513", email: "intl@onefiresafety.com" },
+  { city: "Lahore", addr: "Sales & Service Office, Gulberg III, Lahore", phone: "+92 300 9121994", email: "info@onefiresafety.com" },
+  { city: "International", addr: "Representative Office, Germany", phone: "+49 1577 3856513", email: "info@onefiresafety.com" },
 ];
 
 function OfficesPage() {

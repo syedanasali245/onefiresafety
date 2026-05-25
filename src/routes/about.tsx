@@ -3,21 +3,63 @@ import { SiteLayout } from "@/components/site/SiteLayout";
 import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 import { SectionHeader } from "@/components/site/SectionHeader";
-import { Award, Building2, Flag, ShieldCheck, Users } from "lucide-react";
+import {
+  Award,
+  Building2,
+  CheckCircle2,
+  ClipboardList,
+  Flag,
+  ShieldCheck,
+  Wrench,
+  Users,
+  Zap,
+} from "lucide-react";
 
 export const Route = createFileRoute("/about")({
-  head: () => ({ meta: [
-    { title: "About — ONE FIRE Safety & Security" },
-    { name: "description", content: "ONE FIRE Safety & Security is a company of Alinex Ent. — delivering enterprise-grade fire protection and life-safety solutions." },
-  ]}),
+  head: () => ({
+    meta: [
+      { title: "About — ONE FIRE Safety & Security" },
+      {
+        name: "description",
+        content:
+          "ONE FIRE Safety & Security is a company of Alinex Ent. — delivering enterprise-grade fire protection and life-safety solutions across Pakistan.",
+      },
+    ],
+  }),
   component: AboutPage,
 });
 
-const TIMELINE = [
-  { year: "1965", title: "Founding heritage", body: "Decades of cumulative fire-safety expertise rooted in the founding partner companies of Alinex Ent." },
-  { year: "1992", title: "Industrial expansion", body: "Scaled servicing across manufacturing, oil & gas and commercial complexes nationwide." },
-  { year: "2010", title: "Certified compliance", body: "Operations aligned with NFPA, BS and ISO 9001 quality frameworks." },
-  { year: "Today", title: "ONE FIRE Safety & Security", body: "A modern, technology-driven arm of Alinex Ent. delivering turnkey fire and security infrastructure." },
+const WHY_CHOOSE_US = [
+  {
+    icon: ShieldCheck,
+    title: "NFPA & BS Compliant Systems",
+    body: "Every system we design, supply and install is engineered to meet NFPA and British Standards — giving your facility the highest level of internationally recognised fire safety compliance.",
+  },
+  {
+    icon: Wrench,
+    title: "End-to-End Project Delivery",
+    body: "From initial hazard assessment and system design through supply, installation, commissioning and ongoing maintenance — we manage the full project lifecycle under one accountable team.",
+  },
+  {
+    icon: Building2,
+    title: "Proven Across Demanding Environments",
+    body: "With 100+ completed industrial projects, our systems protect manufacturing plants, warehouses, commercial high-rises, oil & gas facilities and critical infrastructure across Pakistan.",
+  },
+  {
+    icon: ClipboardList,
+    title: "Multi-Brand Product Network",
+    body: "We work with a wide range of leading manufacturers — including Honeywell, Bosch, Apollo, INIM Electronics, Context Plus, Belden, Ceasefire, Atelia, ZKTeco, Garrini Electronics, Orinsong, Howdy and others — giving you access to the right product at the right specification for your facility.",
+  },
+  {
+    icon: Zap,
+    title: "Rapid Response & Maintenance Support",
+    body: "Fire safety systems demand zero downtime. Our Annual Maintenance Contracts and dedicated service teams ensure your protection infrastructure stays operational and inspection-ready around the clock.",
+  },
+  {
+    icon: Users,
+    title: "Certified Training Programmes",
+    body: "We train your workforce through practical, hands-on fire and safety courses aligned to OSHA and civil defence standards — turning your team into an active layer of your safety strategy.",
+  },
 ];
 
 function AboutPage() {
@@ -25,22 +67,29 @@ function AboutPage() {
     <SiteLayout>
       <PageHero
         eyebrow="About Us"
-        title="A heritage of safety, engineered for the modern industrial era."
-        subtitle="ONE FIRE Safety & Security is a proud company of ALINEX ENT. — combining 5+ years of fire-protection experience with modern engineering practice."
+        title="Pakistan's trusted name in fire protection and life safety."
+        subtitle="ONE FIRE Safety & Security is a company of ALINEX ENT. — built to deliver professional, code-compliant fire and security infrastructure for industrial and commercial facilities."
         crumbs={[{ label: "About" }]}
       />
 
+      {/* About Us */}
       <section className="section">
         <div className="container-x grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <SectionHeader
-              eyebrow="Our Mission"
-              title="Protect lives, assets and continuity — without compromise."
-              description="We design, install and maintain fire protection and security systems for facilities where the cost of failure is unacceptable. Our work is measured by code compliance, response time and operational uptime."
+              eyebrow="Who We Are"
+              title="Fire protection engineered for high-stakes environments."
+              description="ONE FIRE Safety & Security was established under ALINEX ENT. with a single purpose: to deliver fire protection and life-safety systems that perform when it matters most. We operate across Pakistan's most demanding environments — from manufacturing plants and warehouses to commercial buildings and industrial facilities — supplying, installing and maintaining systems that meet NFPA and BS compliance standards."
             />
+            <p className="mt-5 text-muted-foreground leading-relaxed text-sm">
+              Our catalogue spans fire fighting systems, fire alarm and detection systems, emergency and safety equipment, and fire-rated doors — all sourced from internationally certified manufacturers. Whether you need a standalone fire extinguisher supply or a fully integrated turnkey suppression and alarm infrastructure, our team of engineers manages every stage of the project with precision and accountability.
+            </p>
+            <p className="mt-4 text-muted-foreground leading-relaxed text-sm">
+              We are more than a supplier. We are a long-term partner — conducting independent fire and safety audits, running certified workforce training programmes, and supporting your facilities through structured annual maintenance contracts that keep your protection systems ready at all times.
+            </p>
             <div className="mt-8 grid sm:grid-cols-2 gap-4">
               {[
-                { icon: Building2, t: "100+ projects" },
+                { icon: Building2, t: "100+ projects delivered" },
                 { icon: Users, t: "Expert engineering team" },
                 { icon: ShieldCheck, t: "NFPA & BS compliant" },
                 { icon: Award, t: "ISO 9001:2015 aligned" },
@@ -59,38 +108,43 @@ function AboutPage() {
             <div className="absolute inset-0 flex flex-col justify-end p-10 text-white">
               <Flag className="h-10 w-10 text-primary mb-4" />
               <p className="font-display text-2xl md:text-3xl font-bold leading-tight">
-                "Safety First is Safety Always."
+                "Safety isn't a product you install once. It's a standard you maintain every day."
               </p>
-              <p className="mt-3 text-white/60 text-sm">— Our operating principle, applied on every site we touch.</p>
+              <p className="mt-3 text-white/60 text-sm">
+                — The principle behind every system we design and every service we deliver.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Why Choose Us */}
       <section className="section bg-surface">
         <div className="container-x">
-          <SectionHeader eyebrow="Our Story" title="A timeline shaped by safety." />
-          <div className="mt-14 relative">
-            <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-border md:-translate-x-1/2" />
-            <div className="space-y-12">
-              {TIMELINE.map((t, i) => (
-                <div key={t.year} className={`relative flex flex-col md:flex-row md:items-center gap-6 ${i % 2 ? "md:flex-row-reverse" : ""}`}>
-                  <div className="md:w-1/2 md:px-10">
-                    <div className="card-elevated rounded-xl p-6">
-                      <div className="text-primary text-sm font-bold tracking-widest uppercase">{t.year}</div>
-                      <h3 className="mt-2 text-xl font-bold text-charcoal">{t.title}</h3>
-                      <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{t.body}</p>
-                    </div>
-                  </div>
-                  <div className="absolute left-4 md:left-1/2 h-4 w-4 rounded-full bg-primary ring-4 ring-background md:-translate-x-1/2" />
-                  <div className="md:w-1/2" />
+          <SectionHeader
+            eyebrow="Why Choose Us"
+            title="What sets ONE FIRE apart."
+            description="We combine technical depth, international product standards and on-the-ground service capability to deliver fire safety outcomes that stand up to real-world demands."
+            align="center"
+          />
+          <div className="mt-14 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {WHY_CHOOSE_US.map(({ icon: Icon, title, body }) => (
+              <div key={title} className="card-elevated rounded-2xl p-7 flex flex-col gap-4">
+                <div className="h-11 w-11 rounded-xl bg-primary/10 flex items-center justify-center">
+                  <Icon className="h-5 w-5 text-primary" />
                 </div>
-              ))}
-            </div>
+                <div>
+                  <h3 className="font-bold text-charcoal text-base">{title}</h3>
+                  <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{body}</p>
+                </div>
+                <CheckCircle2 className="h-4 w-4 text-primary mt-auto" />
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
+      {/* Leadership */}
       <section className="section">
         <div className="container-x">
           <SectionHeader eyebrow="Leadership" title="People accountable for outcomes." align="center" />
@@ -98,10 +152,16 @@ function AboutPage() {
             {["Syed Anas Ali", "Syed Burhan Ali"].map((name) => (
               <div key={name} className="card-elevated rounded-2xl p-8 text-center">
                 <div className="h-20 w-20 mx-auto rounded-full bg-charcoal text-white flex items-center justify-center text-2xl font-extrabold">
-                  {name.split(" ").map((s) => s[0]).slice(0, 2).join("")}
+                  {name
+                    .split(" ")
+                    .map((s) => s[0])
+                    .slice(0, 2)
+                    .join("")}
                 </div>
                 <h3 className="mt-5 font-bold text-charcoal text-lg">{name}</h3>
-                <Link to="/contact" className="mt-5 inline-flex text-sm font-semibold text-charcoal hover:text-primary">Get in touch →</Link>
+                <Link to="/contact" className="mt-5 inline-flex text-sm font-semibold text-charcoal hover:text-primary">
+                  Get in touch →
+                </Link>
               </div>
             ))}
           </div>
