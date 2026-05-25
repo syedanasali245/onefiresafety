@@ -54,24 +54,9 @@ const catalog: { category: string; types: { type: string; items: string[] }[] }[
         ],
       },
       {
-        type: "Fire Pipes & Fittings",
-        items: [
-          "Black Steel Pipes",
-          "Seamless Pipes",
-          "HDPE Pipes",
-          "Grooved Pipes",
-          "Pipe Fittings",
-          "Couplings",
-          "Flexible Sprinkler Hoses",
-          "Flanges",
-        ],
-      },
-      {
         type: "Fire Pumps",
         items: [
-          "Diesel Fire Pumps",
-          "Electric Fire Pumps",
-          "Jockey Pumps",
+          "EDJ Complete Pump Set",
           "Horizontal Split Case Pumps",
           "Vertical Turbine Pumps",
         ],
@@ -79,12 +64,10 @@ const catalog: { category: string; types: { type: string; items: string[] }[] }[
       {
         type: "Fire Valves",
         items: [
-          "Butterfly Valves",
           "Gate Valves",
           "Check Valves",
           "Alarm Valves",
           "Pressure Reducing Valves",
-          "Deluge Valves",
         ],
       },
       {
@@ -96,12 +79,8 @@ const catalog: { category: string; types: { type: string; items: string[] }[] }[
           "Kitchen Hood Suppression Systems",
           "Water Mist Systems",
           "Clean Agent Suppression Systems",
-          "FM200 Systems",
-          "Novec Fire Suppression Systems",
           "Electrical Panel Suppression Systems",
-          "Server Room Suppression Systems",
           "Data Center Fire Suppression Systems",
-          "Battery Room Suppression Systems",
         ],
       },
     ],
@@ -303,7 +282,7 @@ export const FEATURED_PRODUCTS = [
   "ESFR Sprinklers",
   "Steel Fire Rated Doors",
   "LED Exit Signs",
-  "FM200 Systems",
+  "EDJ Complete Pump Set",
   "Intelligent Smoke Detectors",
   "Emergency Exit Doors",
 ]

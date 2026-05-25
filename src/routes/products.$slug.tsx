@@ -61,9 +61,6 @@ function ProductDetailPage() {
                 </div>
               </>
             )}
-            <div className="absolute top-4 left-4 text-[10px] font-bold uppercase tracking-widest text-white bg-primary/90 px-2 py-1 rounded">
-              {product.category}
-            </div>
           </div>
 
           <div>
@@ -139,9 +136,6 @@ function ProductDetailPage() {
                         strokeWidth={1.2}
                       />
                     )}
-                    <div className="absolute top-3 left-3 text-[10px] font-bold uppercase tracking-widest text-white bg-primary/90 px-2 py-1 rounded">
-                      {p.type}
-                    </div>
                   </div>
                   <div className="p-4">
                     <h4 className="font-bold text-charcoal text-sm">{p.title}</h4>

@@ -177,9 +177,7 @@ export const PRODUCT_IMAGES: Record<string, string> = {
   "flanges":                  pipeFlanges,
 
   // Fire Pumps
-  "diesel-fire-pumps":           pumpDiesel,
-  "electric-fire-pumps":         pumpElectric,
-  "jockey-pumps":                pumpJockey,
+  "edj-complete-pump-set":       pumpElectric,
   "horizontal-split-case-pumps": pumpHorizontal,
   "vertical-turbine-pumps":      pumpVertical,
 

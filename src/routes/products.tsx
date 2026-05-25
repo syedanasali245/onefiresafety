@@ -92,9 +92,6 @@ function ProductsPage() {
                                 </div>
                               </>
                             )}
-                            <div className="absolute top-3 left-3 text-[10px] font-bold uppercase tracking-widest text-white bg-primary/90 px-2 py-1 rounded">
-                              {typeGroup.type}
-                            </div>
                           </div>
                           <div className="p-5">
                             <h4 className="font-bold text-charcoal">{p.title}</h4>

@@ -273,7 +273,6 @@ function Products() {
                     </div>
                   </>
                 )}
-                <div className="absolute top-3 left-3 text-[10px] font-bold uppercase tracking-widest text-white bg-primary px-2 py-1 rounded">{p.type}</div>
               </div>
               <div className="p-5">
                 <h3 className="font-bold text-charcoal">{p.title}</h3>
