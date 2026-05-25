@@ -4,6 +4,7 @@ import { PageHero } from "@/components/site/PageHero";
 import { CTASection } from "@/components/site/CTASection";
 import { ArrowRight, CheckCircle2, Download, Flame, Mail } from "lucide-react";
 import { getProductBySlug, getRelatedProducts } from "@/lib/products";
+import { getProductImage } from "@/lib/product-images";
 
 export const Route = createFileRoute("/products/$slug")({
   loader: ({ params }) => {
@@ -28,6 +29,7 @@ export const Route = createFileRoute("/products/$slug")({
 function ProductDetailPage() {
   const { product } = Route.useLoaderData();
   const related = getRelatedProducts(product);
+  const image = getProductImage(product.slug);
 
   return (
     <SiteLayout>
@@ -45,10 +47,20 @@ function ProductDetailPage() {
       <section className="section">
         <div className="container-x grid lg:grid-cols-[1.1fr_1fr] gap-12">
           <div className="aspect-[4/3] rounded-2xl bg-charcoal relative overflow-hidden">
-            <div className="absolute inset-0 grid-bg opacity-10" />
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Flame className="h-40 w-40 text-primary" strokeWidth={1} />
-            </div>
+            {image ? (
+              <img
+                src={image}
+                alt={product.title}
+                className="absolute inset-0 w-full h-full object-contain p-6"
+              />
+            ) : (
+              <>
+                <div className="absolute inset-0 grid-bg opacity-10" />
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <Flame className="h-40 w-40 text-primary" strokeWidth={1} />
+                </div>
+              </>
+            )}
             <div className="absolute top-4 left-4 text-[10px] font-bold uppercase tracking-widest text-white bg-primary/90 px-2 py-1 rounded">
               {product.category}
             </div>
@@ -114,11 +126,19 @@ function ProductDetailPage() {
                   params={{ slug: p.slug }}
                   className="card-elevated rounded-xl overflow-hidden group"
                 >
-                  <div className="aspect-[4/3] bg-charcoal flex items-center justify-center relative">
-                    <Flame
-                      className="h-14 w-14 text-primary group-hover:scale-110 transition-transform"
-                      strokeWidth={1.2}
-                    />
+                  <div className="aspect-[4/3] bg-charcoal flex items-center justify-center relative overflow-hidden">
+                    {getProductImage(p.slug) ? (
+                      <img
+                        src={getProductImage(p.slug)}
+                        alt={p.title}
+                        className="w-full h-full object-contain p-4 group-hover:scale-105 transition-transform"
+                      />
+                    ) : (
+                      <Flame
+                        className="h-14 w-14 text-primary group-hover:scale-110 transition-transform"
+                        strokeWidth={1.2}
+                      />
+                    )}
                     <div className="absolute top-3 left-3 text-[10px] font-bold uppercase tracking-widest text-white bg-primary/90 px-2 py-1 rounded">
                       {p.type}
                     </div>
