@@ -77,7 +77,7 @@ function HeroSlider() {
       ))}
       <div className="absolute inset-0 grid-bg opacity-[0.08]" />
 
-      <div className="relative h-full container-x flex flex-col justify-center">
+      <div className="relative h-full container-x flex flex-col justify-center pt-28 pb-48 md:pt-24 md:pb-56">
         <div key={i} className="max-w-3xl reveal">
           <span className="eyebrow !text-primary">{s.eyebrow}</span>
           <h1 className="mt-5 font-display font-extrabold text-4xl md:text-6xl lg:text-7xl leading-[1.02] whitespace-pre-line">
